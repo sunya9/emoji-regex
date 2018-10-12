@@ -13,7 +13,7 @@ console.log(emojiSequenceES5);
 const emojiSequenceES2015 = trie.toString('u');
 console.log(emojiSequenceES2015);
 
-for (const file of ['index.js', 'text.js', 'es2015/index.js', 'es2015/text.js']) {
+for (const file of ['index.js', 'loose.js', 'text.js', 'es2015/index.js', 'es2015/loose.js', 'es2015/text.js']) {
 	const emojiSequence = file.startsWith('es2015/') ? emojiSequenceES2015 : emojiSequenceES5;
 
 	const input = fs.readFileSync(file, 'utf8');
